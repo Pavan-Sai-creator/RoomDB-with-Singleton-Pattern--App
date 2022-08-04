@@ -7,6 +7,7 @@ import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
 
 @Database(entities = [Contact::class], version = 1)
+@TypeConverters(Convertors::class)
 abstract class ContactDatabase : RoomDatabase() {
     abstract fun contactDAO(): ContactDAO
 

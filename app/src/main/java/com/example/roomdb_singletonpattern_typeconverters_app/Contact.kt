@@ -10,5 +10,6 @@ data class Contact(
     @PrimaryKey(autoGenerate = true)
     val id: Long,
     val name: String,
-    val phone: String
+    val phone: String,
+    val createdDate: Date
 )
